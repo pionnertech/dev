@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {
 // Uncomment this one to fake upload time
 // usleep(5000);
 // Settings
-$targetDir = "/var/www/html/" . $fac;
+$targetDir = "/var/www/develop/" . $fac;
 
 
 //$targetDir = 'uploads';

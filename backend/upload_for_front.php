@@ -3,7 +3,7 @@
 $fac = $_REQUEST['fac_id'];
 $iss_id = $_REQUEST['iss_id'];
 
-$dir = "/var/www/html/" . $fac;
+$dir = "/var/www/develop/" . $fac;
 
 if(!is_dir($dir . "reply/")){
 	mkdir($dir . "reply/", 0775, true);

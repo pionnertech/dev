@@ -36,7 +36,7 @@ $userId = mysqli_query($datos, "SELECT STSK_CHARGE_USR, STSK_ID FROM SUBTASKS WH
 
 if($kind == 0 || $kind == "0"){
  while( $fila = mysqli_fetch_row($userId) ){
-   $rdir = "/var/www/html/" . $fac . "/" . $fila[0] . "_in/";
+   $rdir = "/var/www/develop/" . $fac . "/" . $fila[0] . "_in/";
     if(!is_dir($rdir)) {
         mkdir($rdir, 0775, true);
      }
@@ -55,7 +55,7 @@ if($kind == 0 || $kind == "0"){
 while( $fila = mysqli_fetch_row($userId) ){
   $usInt = mysqli_query($datos, "SELECT STSK_ID FROM SUBTASKS WHERE (STSK_ISS_ID = " . $query['STSK_ISS_ID'] . " AND STSK_FAC_CODE = " . $fac . ")");
   while($kilo = mysqli_fetch_row($usInt) ){
-   $rdir = "/var/www/html/" . $fac . "/" . $fila[0] . "_alt/";
+   $rdir = "/var/www/develop/" . $fac . "/" . $fila[0] . "_alt/";
        if(!is_dir($rdir)) {
             mkdir($rdir, 0775, true);
           }

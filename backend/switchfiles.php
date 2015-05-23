@@ -7,7 +7,7 @@ $main_usr_id = $_GET['main_usr_id'];
 $charge_usr_id = $_GET['charge_usr_id'];
 
 //first check if exist
-$dir = "/var/www/html/" . $fac . "/";
+$dir = "/var/www/develop/" . $fac . "/";
 
 if(!is_dir($dir . $charge_usr_id . "/")){
 	mkdir($dir . $charge_usr_id . "/", 0775, true);

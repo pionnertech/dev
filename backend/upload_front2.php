@@ -44,7 +44,7 @@ $fname = $_REQUEST['full_name'];
 // usleep(5000);
 
 // Settings
-$targetDir = "/var/www/html/" . $fac . "/plupload/";
+$targetDir = "/var/www/develop/" . $fac . "/plupload/";
 //$targetDir = 'uploads';
 $cleanupTargetDir = true; // Remove old files
 $maxFileAge = 5 * 3600; // Temp file age in second

@@ -4,7 +4,7 @@ $fac    = $_REQUEST['fac_id'];
 $user   = $_REQUEST['user'];
 $keyfile = $_REQUEST['keyfile'];
 
-	$dir = "/var/www/html/" . $fac . "/_tmp/";
+	$dir = "/var/www/develop/" . $fac . "/_tmp/";
 	$iss_id = $keyfile;
 
 

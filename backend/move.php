@@ -11,7 +11,7 @@ $datos = mysqli_connect('localhost', "root", "MoNoCeRoS", "K_usr10000");
 
 $rut = mysqli_fetch_assoc(mysqli_query($datos, "SELECT ISS_CTZ FROM ISSUES WHERE ISS_ID =" . $iss_id . ";" ));
 
-$basedir = "/var/www/html/" . $fac . "/";
+$basedir = "/var/www/develop/" . $fac . "/";
 $targetdir = $basedir . "temporary/";
 
 if(!is_dir($basedir . $usr_id . "/")){

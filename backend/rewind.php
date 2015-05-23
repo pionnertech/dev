@@ -15,15 +15,15 @@ $admin = $query['USR_ID'];
 
 if($type == 0) {
 	if($admin != $user){
-        $dir = "var/www/html/" . $fac . "/" . $user . "_in/";
+        $dir = "var/www/develop/" . $fac . "/" . $user . "_in/";
 	} else {
-		$dir = "var/www/html/" . $fac . "/" . $user . "/";
+		$dir = "var/www/develop/" . $fac . "/" . $user . "/";
 	}    
 } else {
 	if($admin != $user){
-        $dir = "var/www/html/" . $fac . "/" . $admin . "_alt/";
+        $dir = "var/www/develop/" . $fac . "/" . $admin . "_alt/";
 	} else {
-		$dir = "var/www/html/" . $fac . "/" . $user . "_alt/";
+		$dir = "var/www/develop/" . $fac . "/" . $user . "_alt/";
 	}
 }
 

@@ -6,7 +6,7 @@ $user = $_POST['usr'];
 $fac  = $_POST['entity'];
 
 
-$dir  = "/var/www/html/" . $fac . "/img/";
+$dir  = "/var/www/develop/" . $fac . "/img/";
 
 if(!is_file($file)){
     echo "No es un archivo";

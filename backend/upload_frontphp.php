@@ -2,7 +2,7 @@
 
 $fac = $_GET['fac'];
 
-$dir = "/var/www/html/" . $fac;
+$dir = "/var/www/develop/" . $fac;
 
 if(!is_dir($dir . "temporary/")){
 
